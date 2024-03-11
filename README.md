@@ -73,4 +73,4 @@ To run the code, run the following command
 \
 **Note:** Inside the YAML file, the Gradient Accumulation factor is 4, and the Batch Size is 32. This will be enough to simulate the performance of 4 GPUs on a single 40GB GPU. You can change them according to the number of GPUs you use.
 
-Ensure that => **BSZ X Grad Factor X N_GPUs >= 128**.
+Ensure that => **Batch Size X Grad Factor X Num GPUs >= 128**.

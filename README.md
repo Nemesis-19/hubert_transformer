@@ -69,4 +69,8 @@ To run the code, run the following command
 ! python train_hubert.py hparams/hubert.yaml
 ```
 
-**Note:** Inside the YAML file, the Gradient Accumulation factor is 4, and the Batch Size is 32. This will be enough to simulate the performance of 4 GPUs on a single 40GB GPU. You can change them according to the number of GPUs you use, but make sure that => BSZ X Grad Factor X N_GPUs >= 128.
+---
+\
+**Note:** Inside the YAML file, the Gradient Accumulation factor is 4, and the Batch Size is 32. This will be enough to simulate the performance of 4 GPUs on a single 40GB GPU. You can change them according to the number of GPUs you use.
+
+Just make sure that => BSZ X Grad Factor X N_GPUs >= 128.
